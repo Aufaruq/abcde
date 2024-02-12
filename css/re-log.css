@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+:root {
+    --bg-color: #9a660b;
+    --main-color: #41b74b;
+    --sec-color: greenyellow;  
+
+    .title,
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 4.3rem;
+        color: var(--main-color);
+        text-shadow: 1px 2px 3px #000;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    button {
+        font-weight: 500;
+        padding: 7px 15px;
+        border: none;
+        border-radius: 8px;
+        margin-top: 1rem;
+        transition: all ease .3s;
+
+        color: #000;
+        background: var(--sec-color);
+        opacity: .8;
+
+        transition: all .5s;
+    }
+
+    button:hover {
+        opacity: 1;
+        color: #fff;
+        background: var(--main-color);
+    }
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--bg-color);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3em;
+    border-radius: 8px;
+    width: 40%;
+    height: 25em;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.log{
+    display: flex;
+    align-items: center;
+}
+
+.box-1 {
+    width: 70%;
+    padding: 2rem 3em;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+label {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+
+input {
+    color: var(--text-text);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    margin: 0 1rem 1rem 1rem;
+    background: transparent;
+    border-bottom: 1px solid greenyellow;
+}

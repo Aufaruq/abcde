@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    color: var(--item-color);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --bg-color: beige;
+    --main-color: #41b74b;
+    --sec-color: #11b61f;
+    --hover:rgb(255, 186, 58);
+
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+        font-size: 4.3rem;
+        text-shadow: 1px 2px 3px #000;
+        font-weight: 800;
+        color: var(--main-color);
+        font-family: 'PT Sans', sans-serif;
+    }
+
+    ul {
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+    body {
+        height: 100vh !important;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    background: var(--bg-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3em;
+    border-radius: 8px;
+    width: 60vw;
+    flex-wrap: wrap;
+    height: 25em;
+    justify-content: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.icon i {
+    color: var(--main-color);
+    font-size: 15rem;
+    margin-top: -1.5rem;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+li a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 1rem 1.2rem;
+    margin: 2rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: all .3s ease;
+    
+    opacity: .8;
+    color: #000;
+    background: var(--main-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+li a:hover {
+    color: #fff;
+    opacity: .9;
+    background: var(--hover);
+}
+
+.logout {
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 992px) {
+    .box {
+        width: 100%;
+        height: 30rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon i {
+        font-size: 9rem;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+
+    li a {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 1.5rem;
+    }
+
+}
